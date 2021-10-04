@@ -1,0 +1,111 @@
+*{
+    font-size: 25px;
+}
+
+.popupWindow{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.contactUsForm {
+    padding: 1rem 5rem 5rem 5rem;
+    background-color: #fff;
+    text-align: left;
+
+}
+
+.contactUsForm p{
+    display: inline;
+    font-size: 50px;
+    font-family: 'Oswald',
+    sans-serif;
+    font-weight: 500;
+}
+
+.labelInput {
+    transition: all .5s;
+    width: 20rem;
+}
+
+.labels{
+    font-size: 1em;
+    color: #aaa;
+    display: block;
+    opacity: 1;
+    transform: translateY(-1.25em);
+    transform-origin:0 0 ;
+    transition: all .5s;
+
+
+
+}
+
+.inputFields {
+    box-shadow: none;
+    background-color: rgba(0,0,0,.02);
+    border-radius: 0px;
+    border-color: #ccc;
+    border-style: none none solid none;
+    width: 100%;
+    transition:all .5s;
+    padding: 5px;
+
+
+}
+
+.inputFields::placeholder{
+    color: transparent;
+}
+
+.inputFields:focus{
+    box-shadow: none;
+    outline: none;
+    border-color: rgb(43, 143, 224);
+}
+
+.labelInput:focus-within{
+    transform: scale(1.05, 1.05);
+}
+
+.inputFields:focus + .labels,
+.inputFields:not(:placeholder-shown) + .labels
+{
+    transform: translateY(-2.5em) scale(.9);
+}
+
+
+.buttonGroup{
+    padding: 2rem 0 0 0;
+    text-align: center;
+
+}
+
+.contactMe {
+    padding: .7rem 4rem;
+    color: #ffffff;
+    border-style: hidden;
+    border-radius: .4rem;
+    background-color: rgb(43, 143, 224);
+    transition: background-color .3s;
+    box-shadow: 5px 5px 5px #888888;
+    font-family: 'Oswald',
+    sans-serif;
+    font-weight:900;
+
+
+
+}
+
+.contactMe:hover{
+    background-color: rgb(33, 37, 41);
+    color: #ffffff;
+    transform: scale(1.05, 1.05);
+
+}
