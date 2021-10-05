@@ -13,7 +13,7 @@
     transition: background-color .3s;
     background-color: #fff;
     color: #000;
-
+    z-index: 10;
 }
 .background {
     background-color: rgb(33,37,41);

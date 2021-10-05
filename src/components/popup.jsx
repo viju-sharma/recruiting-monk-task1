@@ -19,8 +19,8 @@ function Popup(props) {
   };
 
 
-    return props.showPopup ? (
-      <div className={classes.popupWindow}>
+    return  (
+      <div className={props.showPopup ? [classes.popupWindow, classes.show].join(' ') : [classes.popupWindow, classes.hide].join(' ')}>
         <div className={classes.contactUsForm}>
           <p>Contact Us</p>
           <FcPrevious
@@ -33,8 +33,9 @@ function Popup(props) {
               marginBottom: "2rem",
               border: "2px solid rgb(43, 143, 224)",
               borderRadius: "50%",
-              position: "relative",
-              left: "4rem",
+              position: "absolute",
+              right: "1rem",
+              top: "1",
               display: "inline-block",
             }}
           />
@@ -98,9 +99,7 @@ function Popup(props) {
           </form>
         </div>
       </div>
-    ) : (
-      ""
-    );
+    )
 }
 
 export default Popup

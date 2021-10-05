@@ -15,10 +15,12 @@ function Task1() {
 
     return (
       <div className={classes.background}>
-        <button className={classes.contactUsBtn} onClick={handleClick}>
+        <button className={classes.contactUsBtn}
+                onClick={handleClick}
+        >
           Get in touch
         </button>
-       <Popup showPopup={popup} setPopup={showPopup} />
+       <Popup showPopup= {popup} setPopup={showPopup} />
       </div>
     );
 }
